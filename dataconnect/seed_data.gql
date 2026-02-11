@@ -1,0 +1,94 @@
+mutation CreateDemoData @transaction @auth(level: PUBLIC, insecureReason: "This mutation is safe to expose to the public, as it is only used to populate the database with seed data.") {
+  user_insertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      coins: 100,
+      createdAt: "2024-04-29T12:00:00Z",
+      currentLevel: 1,
+      displayName: "demouser1",
+      email: "demouser1@example.com"
+    },
+    {
+      id: "650e8400-e29b-41d4-a716-446655440001",
+      coins: 200,
+      createdAt: "2024-04-29T13:00:00Z",
+      currentLevel: 2,
+      displayName: "demouser2",
+      email: "demouser2@example.com"
+    }
+  ])
+  mosaicArt_insertMany(data: [
+    {
+      id: "750e8400-e29b-41d4-a716-446655440002",
+      ownerId: "550e8400-e29b-41d4-a716-446655440000",
+      completionDate: "2024-05-01",
+      createdAt: "2024-04-29T14:00:00Z",
+      isCompleted: false,
+      motivationalQuote: "Example quote 1",
+      name: "Mosaic 1"
+    },
+    {
+      id: "850e8400-e29b-41d4-a716-446655440003",
+      ownerId: "650e8400-e29b-41d4-a716-446655440001",
+      completionDate: "2024-05-02",
+      createdAt: "2024-04-29T15:00:00Z",
+      isCompleted: true,
+      motivationalQuote: "Example quote 2",
+      name: "Mosaic 2"
+    }
+  ])
+  habit_insertMany(data: [
+    {
+      id: "950e8400-e29b-41d4-a716-446655440004",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      createdAt: "2024-04-29T16:00:00Z",
+      description: "Example habit 1",
+      frequency: "Daily",
+      name: "Habit 1"
+    },
+    {
+      id: "a50e8400-e29b-41d4-a716-446655440005",
+      userId: "650e8400-e29b-41d4-a716-446655440001",
+      createdAt: "2024-04-29T17:00:00Z",
+      description: "Example habit 2",
+      frequency: "Weekly",
+      name: "Habit 2"
+    }
+  ])
+  taskCompletion_insertMany(data: [
+    {
+      id: "b50e8400-e29b-41d4-a716-446655440006",
+      habitId: "950e8400-e29b-41d4-a716-446655440004",
+      userId: "550e8400-e29b-41d4-a716-446655440000",
+      coinsEarned: 50,
+      completionDate: "2024-04-30",
+      createdAt: "2024-04-29T18:00:00Z"
+    },
+    {
+      id: "c50e8400-e29b-41d4-a716-446655440007",
+      habitId: "a50e8400-e29b-41d4-a716-446655440005",
+      userId: "650e8400-e29b-41d4-a716-446655440001",
+      coinsEarned: 100,
+      completionDate: "2024-05-01",
+      createdAt: "2024-04-29T19:00:00Z"
+    }
+  ])
+  mosaicPiece_insertMany(data: [
+    {
+      id: "d50e8400-e29b-41d4-a716-446655440008",
+      mosaicArtId: "750e8400-e29b-41d4-a716-446655440002",
+      createdAt: "2024-04-29T20:00:00Z",
+      imageUrl: "http://example.com/piece1.jpg",
+      positionX: 1,
+      positionY: 1
+    },
+    {
+      id: "e50e8400-e29b-41d4-a716-446655440009",
+      mosaicArtId: "850e8400-e29b-41d4-a716-446655440003",
+      createdAt: "2024-04-29T21:00:00Z",
+      imageUrl: "http://example.com/piece2.jpg",
+      positionX: 2,
+      positionY: 2
+    }
+  ])
+}

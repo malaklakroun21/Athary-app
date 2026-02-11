@@ -1,0 +1,49 @@
+type User @table {
+  displayName: String!
+  email: String!
+  createdAt: Timestamp!
+  currentLevel: Int!
+  coins: Int!
+  photoUrl: String
+  lastLogin: Timestamp
+}
+
+type Habit @table {
+  user: User!
+  name: String!
+  description: String!
+  frequency: String!
+  createdAt: Timestamp!
+  reminderTime: Timestamp
+}
+
+type TaskCompletion @table {
+  user: User!
+  habit: Habit!
+  completionDate: Date!
+  coinsEarned: Int!
+  createdAt: Timestamp!
+}
+
+type MosaicArt @table {
+  # For shared art, multiple users can be linked via a join table or array of user IDs
+  # But for simplicity, we'll keep a single user for now as arrays are not directly supported for relationships
+  # A future enhancement could introduce a join table for many-to-many user-mosaicart.
+  name: String!
+  motivationalQuote: String!
+  createdAt: Timestamp!
+  completionDate: Date!
+  isCompleted: Boolean!
+  description: String
+  imageUrl: String
+  owner: User # For individual ownership, or a single owner in shared context
+}
+
+type MosaicPiece @table {
+  mosaicArt: MosaicArt!
+  imageUrl: String!
+  positionX: Int!
+  positionY: Int!
+  createdAt: Timestamp!
+  unlockedBy: User # User who unlocked this specific piece
+}
