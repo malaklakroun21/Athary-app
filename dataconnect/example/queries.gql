@@ -1,0 +1,38 @@
+mutation CreateUser @auth(level: USER) {
+  user_insert(data: {
+    id_expr: "uuidV4()",
+    coins: 0,
+    createdAt_expr: "request.time",
+    currentLevel: 1,
+    displayName: "New User",
+    email: "newuser@example.com"
+  })
+}
+
+query GetMosaicArtsForCurrentUser @auth(level: USER) {
+  mosaicArts(where: { ownerId: { eq_expr: "auth.uid" } }) {
+    id
+    name
+    description
+    imageUrl
+    isCompleted
+    completionDate
+  }
+}
+
+mutation CompleteMosaicArt($mosaicArtId: UUID!) @auth(level: USER) {
+  mosaicArt_update(
+    key: { id: $mosaicArtId }
+    data: { isCompleted: true, completionDate_expr: "request.time" }
+  )
+}
+
+query ListHabits @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users.") {
+  habits {
+    id
+    name
+    description
+    frequency
+    reminderTime
+  }
+}
