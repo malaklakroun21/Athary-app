@@ -1,0 +1,300 @@
+.profile-page {
+  background-color: #e6f7ff;
+  min-height: 100vh;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+
+.profile-header {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 0px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+.profile-avatar {
+  width: 250px;
+  height: 150px;
+  margin: 0 auto 15px;
+  object-fit: contain;
+}
+
+.stats-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
+.join-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.stat-item {
+      font-weight: bold;
+  font-family: 'VT323', monospace;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.level-badge {
+  background-color: #F9D781;
+  color: #FF5900;
+  padding: 10px 12px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
+.add-friends-btn {
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+  background-color: #7EB7FC;
+  color: #002CAF;
+  border: none;
+  border-radius: 0px;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight:600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.qr-icon {
+  width: 32px;
+  height: 40px;
+}
+
+.friends-streak {
+  margin-top: 15px;
+}
+
+.streak-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+  text-align: left;
+}
+
+.streak-avatars {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.streak-avatar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.streak-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  object-fit: cover;
+}
+
+.streak-count {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: white;
+  padding: 2px 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #e74c3c;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.fire-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.add-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #666;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-more:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.monthly-badges, .achievements {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+   margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #000;
+  text-align: center;
+  font-family: 'VT323', monospace;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.badge-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.achievements-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.achievement-progress {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Bottom Navigation - same as Challenge */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nav-icon.active {
+  opacity: 1;
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
