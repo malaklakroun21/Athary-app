@@ -1,42 +1,148 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #cfe8ff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Character background image */
+.character-image {
+  position: absolute;
+  width: 422px;
+  height: 591px;
+  left: 98px;
+  top: 83px;
+  background: url('./assets/download__14_-removebg-preview.png') no-repeat;
+  background-size: contain;
+}
+
+/* Logo at top */
+.logo {
+  position: absolute;
+  width: 64px;
+  height: 71px;
+  left: calc(50% - 64px/2 - 18px);
+  top: 35px;
+  background: url('./assets/image19.png') no-repeat;
+  background-size: contain;
+}
+
+/* Greeting text */
+.greeting {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #4a6fa5;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Login form */
+.login-form {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+}
+
+.email-input,
+.password-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Social login section */
+.social-login {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social-icon.google {
+  left: -4px;
+  top: 0px;
+  background-image: url('./assets/google.png');
+}
+
+.social-icon.apple {
+  left: 76px;
+  top: 0px;
+  background-image: url('./assets/apple.png');
+}
+
+.social-icon.facebook {
+  left: 161px;
+  top: 5px;
+  background-image: url('./assets/facebook.png');
+}
+
+/* Sign up text */
+.signup-text {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #4a6fa5;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.signup-text span {
+  color: #0066ff;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Divider line */
+.divider {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, #ccc, #ccc 50%, transparent 50%);
 }
