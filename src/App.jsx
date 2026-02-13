@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Login from './components/Login';
 import Challenge from './components/Challenge';
 import Profile from './components/Profile';
@@ -25,7 +25,7 @@ import Name from './pages/Name/Name';
 
 function App() {
   return (
-    <Router>
+  
     <Routes>
       <Route path="/" element={<Questionnaire />} />
       <Route path="/greenchar" element={<Greenchar />} />
@@ -49,7 +49,7 @@ function App() {
       <Route path="/album" element={<Album />} />
       <Route path="/teamalbum" element={<TeamAlbum />} />
     </Routes>
-    </Router>
+
   )
 }
 
