@@ -1,0 +1,284 @@
+.challenge-page {
+  background-color: #e6f7ff;
+  min-height: 100vh;
+  padding: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 80px;
+}
+
+
+.level-header {
+ display: flex;
+   justify-content: space-between;
+  align-items: right;
+  margin-bottom: 8px;
+}
+
+.level-header1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -50px; /* المسافة بين level و coins */
+}
+
+
+.level-header2 {
+  display: flex;
+flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
+  margin-bottom: 8px;
+}
+
+
+.level-indicator {
+  display: flex;
+  align-items: right;
+}
+
+
+
+.star-icon, .coins-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.level-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1890ff;
+}
+
+/* Style pour les pièces */
+.coins {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #7EB7FC, #7EB7FC);
+  padding: 4px 8px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  min-width: 100px;
+  justify-content: center;
+}
+
+.coins-icon {
+    position: absolute;
+    left:25px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.coins-amount {
+  font-weight: bold;
+  font-size: 16px;
+  color: #070807;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Nouvelle barre de niveau */
+.level-bar {
+  width: 90px;
+  height: 8px;
+  background-color: #ffcc00; /* Jaune */
+  border-radius: 22px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.level-progress {
+  height: 100%;
+  background-color: #1890ff; /* Bleu */
+  border-radius: 4px;
+}
+
+
+.avatar-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #000;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 4px;
+   font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
+.challenge-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.challenge-card:hover {
+  transform: translateY(-2px);
+}
+
+.challenge-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.challenge-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.challenge-info {
+  flex: 1;
+}
+
+.challenge-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.challenge-level {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1890ff;
+  border-radius: 5px;
+}
+
+.collaboration-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 70px;
+}
+
+.invite-title {
+  color: #F98181;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 0px;
+  text-align: center;
+   font-weight: bold;
+  font-family: 'VT323', monospace;
+}
+
+.invite-description {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.challenge-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.challenge-options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  color: #333;
+}
+
+.challenge-options label:hover {
+  background-color: #f5f5f5;
+}
+
+.challenge-options input {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.invite-button {
+  background-color:#90BEED;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.invite-button:hover {
+  background-color: #002CAF;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nav-icon.active {
+  opacity: 1;
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}

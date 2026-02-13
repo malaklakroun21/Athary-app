@@ -11,6 +11,9 @@ import Cappink from './pages/accessories/cappink'
 import Capgreen from './pages/accessories/capgreen'
 import WelcomePink from './pages/welcomepink/welcomepink'
 import Welcomegreen from './pages/welcomegreen/welcomegreen'
+import Login from './components/login';
+import Challenge from './components/Challenge';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -23,8 +26,11 @@ function App() {
       <Route path="/capgreen" element={<Capgreen />} />
       <Route path="/welcomegreen" element={<Welcomegreen />} />
       <Route path="/welcomepink" element={<WelcomePink />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/challenge" element={<Challenge />} />
+      <Route path="/Profile" element={<Profile />} />
     </Routes>
   )
 }
 
-export default App
+export default App;

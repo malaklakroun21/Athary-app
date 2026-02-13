@@ -37,3 +37,20 @@ export default defineConfig({
     port: 5173
   }
 })
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
+      manifest: {
+        name: 'Athary App',
+        short_name: 'Athary',
+        description: 'Your login application',
+        theme_color: '#4a6fa5',
+        icons: [
+          { src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png' }
+        ]
+      }
+    })
+  ],
+  build: {
+    outDir: 'dist' 
+  }
+})
