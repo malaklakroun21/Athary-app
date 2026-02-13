@@ -1,20 +1,20 @@
-import React, { StrictMode } from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { initializeApp } from 'firebase/app';
-import { getAnalytics, isSupported } from 'firebase/analytics';
-import './index.css';
-import App from './App.jsx';
+// src/main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 
-const firebaseConfig = {
-  apiKey: 'AIzaSyAs6cvHLWQpCYMw4hnZgJj5LPLQxlCqOTM',
-  authDomain: 'athar-4f0b0.firebaseapp.com',
-  projectId: 'athar-4f0b0',
-  storageBucket: 'athar-4f0b0.firebasestorage.app',
-  messagingSenderId: '935873795091',
-  appId: '1:935873795091:web:9a9ab5df818e3e204a1be6',
-  measurementId: 'G-5T89LBJPWZ',
-};
+
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
 
 const app = initializeApp(firebaseConfig);
 
@@ -27,9 +27,16 @@ if (import.meta.env.PROD) {
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-
-);
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>,
+// )
