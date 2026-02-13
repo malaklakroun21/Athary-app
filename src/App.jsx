@@ -14,6 +14,8 @@ import Cappink from './pages/accessories/cappink'
 import Capgreen from './pages/accessories/capgreen'
 import WelcomePink from './pages/welcomepink/welcomepink'
 import Welcomegreen from './pages/welcomegreen/welcomegreen'
+import Profile from './components/Profile';
+import StreakPage from './components/streak';
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/streak" element={<StreakPage />} />
       </Routes>
     </Router>
   )
