@@ -1,0 +1,210 @@
+.album-screen-alb{
+    background-color: #BFE6FF;
+ 
+}
+
+
+
+.level-header-alb{
+ display: flex;
+   justify-content: space-between;
+  align-items: right;
+  margin-bottom: 0px;
+  margin-bottom: 0%;
+  padding-left:0px;
+}
+
+.level-header1-alb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -50px; /* المسافة بين level و coins */
+}
+
+
+.level-header2-alb {
+  display: flex;
+flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
+  margin-bottom: 8px;
+}
+
+
+.level-indicator-alb {
+  display: flex;
+  align-items: right;
+}
+
+
+
+.star-icon-alb, .coins-icon-alb {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.level-text_alb {
+   font-weight: bold;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1890ff;
+  padding:0px;
+}
+/* Style pour les pièces */
+.coins-alb {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #7EB7FC, #7EB7FC);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left:0px;
+  padding-right:0px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  min-width: 60px;
+  justify-content: center;
+ margin-left:-40px;
+ 
+}
+
+.coins-icon-alb {
+    position: absolute;
+    left:20px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.coins-amount-alb {
+  font-weight: bold;
+  font-size: 16px;
+  color: #070807;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Nouvelle barre de niveau */
+.level-bar_alb {
+  width: 150px;
+  height: 8px;
+ 
+  background-color: #7EB7FC; /* Jaune */
+  border-radius: 22px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.level-progress-alb {
+  height:100%;
+  
+  background-color: #ffcc00;
+  border-radius: 4px;
+}
+
+
+.avatar-icon-alb {
+  width: 32px;
+  height: 32px;
+}
+.Brain-icon-alb{
+    width: 60px;
+    margin-top: 2px;
+    margin-left:5px;
+    height: 60px;
+}
+
+
+/* TABS */
+.tabs-alb {
+ padding-top:15px;
+    display: flex;
+  gap: 10px;
+  margin-top:20px;
+  
+}
+
+.tab {
+font-family: "VT323", monospace;
+font-size:17px;
+  padding: 7px 20px;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  background: #e3f3ff;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #7eb7fc;
+  color: white;
+  margin-left: 9px;
+}
+
+/* GRID */
+.albums-grid-alb {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  background-color: #E4F5FF;
+  padding-top:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-left: 0%;
+   margin-top: 0px;
+ 
+}
+
+/* CARD */
+.album-card-alb {
+  position: relative;
+}
+
+.album-card-alb img {
+  width: 150px;
+  height:150px;
+  
+
+}
+
+.album-title-alb {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7eb7fc;
+  color: white;
+ padding-top:15px;
+    padding-bottom:15px;
+    padding-left:55px;
+     padding-right:55px;
+    margin-bottom:0px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.alb-tabs-alb{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+.footer-alb{
+
+    display: flex;
+     justify-content: space-between;
+     padding-left: 30px;
+    padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+     box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.18);
+}
+.footer-alb img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
