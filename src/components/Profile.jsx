@@ -15,19 +15,25 @@ const Profile = () => {
       <div className="profile-header">
         <div className="header-top">
           <h1 className="profile-name">athar lolaa</h1>
-          <img src="/Grid.svg" alt="Menu" className="menu-icon" />
+          <img src="/Menu.svg" alt="Menu" className="menu-icon" />
         </div>
         
         <img src="/Brain.svg" alt="Profile Avatar" className="profile-avatar" />
           </div>
         <div className="stats-bar">
-          <div className="user-info">
-            <span className="username">@atharlolaa</span>
-            <span className="join-date">· Joined 2026</span>
+               <div className="stats">
+            <span className="stat-item">@atharlolaa</span>
+            <span className="stat-item">· Joined 2026 </span>
           </div>
-          <div className="stats">
-            <span className="stat-item">5 following</span>
-            <span className="stat-item">25 followers</span>
+       
+           <div className="user-info">
+            <span className="username">5</span>
+            <span className="join-date">following</span>
+          </div>
+     
+            <div className="user-info">
+            <span className="username">25</span>
+            <span className="join-date">followers</span>
           </div>
         </div>
         
@@ -39,74 +45,133 @@ const Profile = () => {
           </button>
           <img src="/Qr Code.svg" alt="QR Code" className="qr-icon" />
         </div>
-
-       <div className="friends-streak">
-         <h3 className="streak-title">friends streak</h3>
-  
-        <div className="streak-avatars">
-    <div className="streak-avatar">
-      <img src="/Avatar-Pink.svg" alt="Friend 1" />
-         </div>
-    <div className="streak-avatar">
-      <img src="/Avatar-Purple.svg" alt="Friend 2" />
-    </div>
-    <div className="streak-avatar">
-      <img src="/Avatar-Yellow.svg" alt="Friend 3" />
-     
-    </div>
+  <div className="section-container">
     
-    <div className="streak-avatar add-more">
-      <span className="add-icon">+</span>
-    </div>
+     <div className="friends-streak">
+      <h3 className="section-title">friends streak</h3>
+        <div className="streak-avatars">
+   
+   <div className="combined-badge">
+    <img 
+      src="/1.svg" 
+      alt="Friend1" 
+      className="badge-background" 
+    />
+  
+  </div>
+ <div className="combined-badge">
+    <img 
+      src="/2.svg" 
+      alt="Friend2" 
+      className="badge-background" 
+    />
+  
+  </div>
+    
+    <div className="combined-badge">
+    <img 
+      src="/01.svg" 
+      alt="Friend3" 
+      className="badge-background" 
+    />
+  
+  </div>
+   <div className="combined-badge">
+    <img 
+      src="/Story4.svg" 
+      alt="Add" 
+      className="badge-background1" 
+    />
+  
+  </div>
   </div>
 </div>
-    
+</div>
+     <div className="section-container">
 
       {/* Monthly Badges */}
-      <div className="monthly-badges">
-        <h3 className="section-title">monthly badges</h3>
-        <div className="badges-grid">
-          <img src="/Water Bottle.svg" alt="Water Bottle" className="badge-icon" />
-          <img src="/Strawberry.svg" alt="Strawberry" className="badge-icon" />
-          <img src="/Sleep.svg" alt="Sleep" className="badge-icon" />
-          <img src="/Sneakers.svg" alt="Sneakers" className="badge-icon" />
-          <img src="/Praying Beads.svg" alt="Praying Beads" className="badge-icon" />
-        </div>
-      </div>
+  <h3 className="section-title">Monthly badges</h3>
+  <div className="monthly-badges">
+ <div className="combined-badge">
+    <img 
+      src="/Image.svg" 
+      alt="Badge background" 
+      className="badge-background" 
+    />
+  </div>
 
+ <div className="combined-badge">
+    <img 
+      src="/Image3.svg" 
+      alt="Badge background" 
+      className="badge-background" 
+    />
+  </div>
+
+  
+    <div className="combined-badge">
+    <img 
+      src="/Zz.svg" 
+      alt="Sleep" 
+      className="badge-background" 
+    />
+  </div>
+
+
+   <div className="combined-badge">
+    <img 
+      src="/Image4.svg" 
+      alt="Badge background" 
+      className="badge-background" 
+    />
+  </div>
+
+   <div className="combined-badge">
+    <img 
+      src="/Image5.svg" 
+      alt="Badge background" 
+      className="badge-background" 
+    />
+  
+  </div>
+</div>
+</div>
+ <div className="section-container">
       {/* Achievements */}
+          <h3 className="section-title">achievements</h3>
       <div className="achievements">
-        <h3 className="section-title">achievements</h3>
         <div className="achievements-list">
           <div className="achievement-item">
-            <img src="/Water Bottle.svg" alt="Water Bottle" className="achievement-icon" />
+            <img src="/Image.svg" alt="Water Bottle" className="achievement-icon" />
             <span className="achievement-progress">15/50</span>
           </div>
           <div className="achievement-item">
-            <img src="/Strawberry.svg" alt="Strawberry" className="achievement-icon" />
+            <img src="/Image3.svg" alt="Strawberry" className="achievement-icon" />
             <span className="achievement-progress">20/20</span>
           </div>
           <div className="achievement-item">
-            <img src="/Sleep.svg" alt="Sleep" className="achievement-icon" />
+            <img src="/Zz.svg" alt="Sleep" className="achievement-icon" />
             <span className="achievement-progress">83/100</span>
           </div>
           <div className="achievement-item">
-            <img src="/Sneakers.svg" alt="Sneakers" className="achievement-icon" />
+            <img src="/Image4.svg" alt="Sneakers" className="achievement-icon" />
             <span className="achievement-progress">48/75</span>
           </div>
           <div className="achievement-item">
-            <img src="/Praying Beads.svg" alt="Praying Beads" className="achievement-icon" />
+            <img src="/Image5.svg" alt="Praying Beads" className="achievement-icon" />
             <span className="achievement-progress">15/50</span>
           </div>
         </div>
       </div>
+  </div>
+    
 
       {/* Bottom Navigation */}
       <div className="bottom-nav">
         <img 
           src="/Paint Palette.svg" 
           alt="Brain" 
-          className="nav-icon active" 
+          className="nav-icon" 
           onClick={() => handleNavClick('/brain')}
         />
         <img 
@@ -118,14 +183,14 @@ const Profile = () => {
         <img 
           src="/LOL.svg" 
           alt="LOL" 
-          className="nav-icon" 
+          className="nav-icon active" 
           onClick={() => handleNavClick('/profile')}
         />
         <img 
           src="/People.svg" 
           alt="People" 
           className="nav-icon" 
-          onClick={() => handleNavClick('/people')}
+          onClick={() => handleNavClick('/Communication')}
         />
       </div>
     </div>
