@@ -17,14 +17,11 @@ import Cappink from './pages/accessories/cappink'
 import Capgreen from './pages/accessories/capgreen'
 import WelcomePink from './pages/welcomepink/welcomepink'
 import Welcomegreen from './pages/welcomegreen/welcomegreen'
-import Login from './components/login';
-import Challenge from './components/Challenge';
-import Profile from './components/Profile';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Character />} />
+      <Route path="/" element={<Questionnaire />} />
       <Route path="/greenchar" element={<Greenchar />} />
       <Route path="/dragaccs" element={<Dragaccs />} />
       <Route path="/dragaccgreen" element={<Dragaccsgreen />} />
