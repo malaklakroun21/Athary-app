@@ -2,7 +2,6 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Challenge from './components/Challenge';
-import Profile from './components/Profile'; 
 import Questionnaire from './pages/questionnaire/Questionnaire'
 import Sondage from './pages/sondage/sondage'
 import Sondage2 from './pages/sondage2/sondage2'
