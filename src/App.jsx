@@ -1,20 +1,21 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Router } from 'react-router-dom';
 import Login from './components/Login';
 import Challenge from './components/Challenge';
-import Questionnaire from './pages/questionnaire/Questionnaire'
-import Sondage from './pages/sondage/sondage'
-import Sondage2 from './pages/sondage2/sondage2'
-import Album from './pages/Album/Album'
-import TeamAlbum from './pages/TeamAlbum/TeamAlbum'
-import Character from './pages/Character/character'
-import Greenchar from './pages/greenchar/greenchar'
-import Dragaccs from './pages/Character/dragaccs'
-import Dragaccsgreen from './pages/greenchar/dragaccgreen'
-import Cappink from './pages/accessories/cappink'
-import Capgreen from './pages/accessories/capgreen'
-import WelcomePink from './pages/welcomepink/welcomepink'
-import Welcomegreen from './pages/welcomegreen/welcomegreen'
+import Profile from './components/Profile';
+import Questionnaire from './pages/questionnaire/Questionnaire';
+import Sondage from './pages/sondage/sondage';
+import Sondage2 from './pages/sondage2/sondage2';
+import Album from './pages/Album/Album';
+import TeamAlbum from './pages/TeamAlbum/TeamAlbum';
+import Character from './pages/Character/character';
+import Greenchar from './pages/greenchar/greenchar';
+import Dragaccs from './pages/Character/dragaccs';
+import Dragaccsgreen from './pages/greenchar/dragaccgreen';
+import Cappink from './pages/accessories/cappink';
+import Capgreen from './pages/accessories/capgreen';
+import WelcomePink from './pages/welcomepink/welcomepink';
+import Welcomegreen from './pages/welcomegreen/welcomegreen';
 import StreakPage from './components/streak';
 import Communication from './components/Communication';
 import Gender from './components/Gender';
@@ -24,6 +25,7 @@ import Name from './pages/Name/Name';
 
 function App() {
   return (
+    <Router>
     <Routes>
       <Route path="/" element={<Questionnaire />} />
       <Route path="/greenchar" element={<Greenchar />} />
@@ -47,6 +49,7 @@ function App() {
       <Route path="/album" element={<Album />} />
       <Route path="/teamalbum" element={<TeamAlbum />} />
     </Routes>
+    </Router>
   )
 }
 
