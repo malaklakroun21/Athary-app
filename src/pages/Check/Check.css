@@ -1,0 +1,52 @@
+
+
+.check-screen {
+  background: #ccecff;
+  min-height: 100vh;
+ 
+}
+
+
+
+/* Button */
+.focus-btn {
+  margin: 15px auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Tasks */
+.tasks {
+  flex: 1;
+}
+
+.task {
+  background: #eaf6ff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task input {
+  accent-color: #2b7cff;
+}
+
+.emoji {
+  margin-left: auto;
+}
+
+/* Bottom nav */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 15px;
+}
