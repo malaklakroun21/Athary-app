@@ -119,7 +119,7 @@ const Challenge = () => {
           src="/People.svg" 
           alt="Amis" 
           className="nav-icon" 
-          onClick={() => handleNavClick('/people')}
+          onClick={() => handleNavClick('/Communication')}
         />
       </div>
     </div>

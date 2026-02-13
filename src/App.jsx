@@ -15,7 +15,11 @@ import Capgreen from './pages/accessories/capgreen'
 import WelcomePink from './pages/welcomepink/welcomepink'
 import Welcomegreen from './pages/welcomegreen/welcomegreen'
 import Profile from './components/Profile';
+<<<<<<< HEAD
 import StreakPage from './components/streak';
+=======
+import Communication from './components/Communication';
+>>>>>>> 72f5648cc275ff72c13df8fbb5f563cbe7e13b4d
 
 function App() {
   return (
@@ -32,7 +36,11 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/Profile" element={<Profile />} />
+<<<<<<< HEAD
         <Route path="/streak" element={<StreakPage />} />
+=======
+        <Route path="/Communication" element={<Communication />} />
+>>>>>>> 72f5648cc275ff72c13df8fbb5f563cbe7e13b4d
       </Routes>
     </Router>
   )
