@@ -1,0 +1,23 @@
+.welcome{
+    color: #621C52;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 0%;
+}
+
+.atharpic{
+    width:360px;
+    height: auto;
+    margin-left: -10px;
+}
+
+.begin{
+    background-color: #f98181a1;
+    border: none;
+    width: 80%;
+    height: 60px;
+    font-family: "VT323", monospace;
+    font-size: 160%;
+    cursor: pointer;
+    margin-top: 0px;
+}

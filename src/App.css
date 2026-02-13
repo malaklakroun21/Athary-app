@@ -8,7 +8,8 @@
 body {
   background-color: #cfe8ff;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
+  overflow-y: auto;
 }
 
 .container {
@@ -146,3 +147,4 @@ body {
   height: 1px;
   background: linear-gradient(to right, #ccc, #ccc 50%, transparent 50%);
 }
+

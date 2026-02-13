@@ -1,0 +1,36 @@
+body{
+    background-color: #BFE6FF;
+}
+.title-questionnaire{
+    color: #002CAF;
+}
+
+
+.first{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.second{
+    margin-top: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+}
+.last{
+    margin-top: 20%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+}
+
+.p1{
+    margin-top: 10%;
+}

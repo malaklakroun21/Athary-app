@@ -1,0 +1,195 @@
+.streak-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+
+.streak-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.streak-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  line-height: 1;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.streak-label {
+  font-size: 0.95em;
+  color: #888;
+  margin-top: -5px;
+}
+
+.streak-fire-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.streak-message {
+  background: #ffe8e8;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.message-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.message-content span {
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.4;
+}
+
+.streak-extend-btn {
+  background: transparent;
+  color: #ff6f61;
+  border: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 8px 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.streak-calendar {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-month {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calendar-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+/* horizontal streak line */
+.calendar-row.streak-row::before {
+  content: "";
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  top: 50%;
+  height: 8px;
+  background: #f7b487;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* keep day circles above the line */
+.calendar-row span {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ONLY the line, no circles behind numbers */
+.streak-day {
+  background: transparent;
+  color: #333;
+  font-weight: 600;
+}
+
+/* highlight line color/size */
+.calendar-row.streak-row::before {
+  height: 8px;
+  background: #f7b487;
+}
+
+/* current / frozen days are just icons (no background) */
+.streak-day.current,
+.streak-day.frozen {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* icon sizing like screenshot */
+.day-icon {
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+/* remove unused fire style */
+.streak-day.fire {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* calendar sizing + spacing like the design */
+.calendar-grid {
+  gap: 10px;
+}
+
+.calendar-row span {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #333;
+}
