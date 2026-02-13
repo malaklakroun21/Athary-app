@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-import React from 'react';
+import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/login';
 import Challenge from './components/Challenge';
 import Profile from './components/Profile'; 
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
 import Questionnaire from './pages/questionnaire/Questionnaire'
 import Sondage from './pages/sondage/sondage'
 import Sondage2 from './pages/sondage2/sondage2'
@@ -20,19 +17,21 @@ import Welcomegreen from './pages/welcomegreen/welcomegreen'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Questionnaire />} />
-      <Route path="/greenchar" element={<Greenchar />} />
-      <Route path="/dragaccs" element={<Dragaccs />} />
-      <Route path="/dragaccgreen" element={<Dragaccsgreen />} />
-      <Route path="/cappink" element={<Cappink />} />
-      <Route path="/capgreen" element={<Capgreen />} />
-      <Route path="/welcomegreen" element={<Welcomegreen />} />
-      <Route path="/welcomepink" element={<WelcomePink />} />
-      <Route path="/Login" element={<Login />} />
-      <Route path="/challenge" element={<Challenge />} />
-      <Route path="/Profile" element={<Profile />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Questionnaire />} />
+        <Route path="/greenchar" element={<Greenchar />} />
+        <Route path="/dragaccs" element={<Dragaccs />} />
+        <Route path="/dragaccgreen" element={<Dragaccsgreen />} />
+        <Route path="/cappink" element={<Cappink />} />
+        <Route path="/capgreen" element={<Capgreen />} />
+        <Route path="/welcomegreen" element={<Welcomegreen />} />
+        <Route path="/welcomepink" element={<WelcomePink />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/challenge" element={<Challenge />} />
+        <Route path="/Profile" element={<Profile />} />
+      </Routes>
+  <Router/>
   )
 }
 
