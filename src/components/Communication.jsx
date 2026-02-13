@@ -14,12 +14,12 @@ const Communication = () => {
   return (
     <div className="communication-container">
      {/* Section des utilisateurs en haut */}
-<section className="community-header">
+<section className="community-header1">
 
-    <div className="profile-header">
-         <img src="/logo.svg" alt="Profile Avatar" className="profile-avatar" />
+    <div className="profile-header1">
+         <img src="/logo.svg" alt="Profile Avatar" className="profile-avatar1" />
         <div className="header-top">
-          <h1 className="profile-name">Community</h1>
+          <h1 className="profile-name1">Community</h1>
         </div>
         
        
