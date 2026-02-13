@@ -1,7 +1,15 @@
 import React from 'react';
 import '../styles/Gender.css';
+import { useNavigate } from 'react-router-dom';
 
 function Gender({ onGenderSelect }) {
+
+  const navigate = useNavigate();
+
+  const handlemail = () => {
+    navigate("/email");
+  }
+
   return (
     <div className="gender-container">
       {/* Logo at top */}
@@ -17,7 +25,7 @@ function Gender({ onGenderSelect }) {
         {/* Female option */}
         <div 
           className="gender-option" 
-          onClick={() => onGenderSelect('female')}
+          onClick={handlemail} role='button' tabIndex={0}
         >
           <div className="gender-icon female-icon"></div>
           <div className="gender-label">FEMALE</div>
@@ -26,7 +34,8 @@ function Gender({ onGenderSelect }) {
         {/* Male option */}
         <div 
           className="gender-option" 
-          onClick={() => onGenderSelect('male')}
+          // onClick={() => onGenderSelect('male')}
+          onClick={handlemail} role='button' tabIndex={0}
         >
           <div className="gender-icon male-icon"></div>
           <div className="gender-label">MALE</div>

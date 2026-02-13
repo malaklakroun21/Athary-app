@@ -25,7 +25,7 @@ function Greenchar (){
     };
 
     const backPink = () =>{
-        navigate("/")
+        navigate("/Character")
     }
 
     const addCap = () =>{

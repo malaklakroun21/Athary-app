@@ -65,7 +65,7 @@ function Login() {
           <div className="signup-text">
             don't have an account? <span 
               className="signup-link" 
-              onClick={() => setStep('gender')}
+              onClick={() => navigate('/gender')}
             >Join us!</span>
           </div>
           

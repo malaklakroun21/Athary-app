@@ -26,7 +26,7 @@ function Dragaccs(){
     };
 
     const handleBack = () => {
-        navigate("/");
+        navigate("/Character");
     };
 
     const go =() =>{

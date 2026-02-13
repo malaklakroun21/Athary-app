@@ -1,0 +1,214 @@
+.album-screen-team{
+    background-color: #BFE6FF;
+ 
+}
+
+
+
+.level-header-team{
+ display: flex;
+   justify-content: space-between;
+  align-items: right;
+  margin-bottom: 0px;
+  margin-bottom: 0%;
+  padding-left:0px;
+}
+
+.level-header1-team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: -50px; /* المسافة بين level و coins */
+}
+
+
+.level-header2-team{
+  display: flex;
+flex-direction: column;
+  justify-content: space-between;
+  align-items: right;
+  margin-bottom: 8px;
+}
+
+
+.level-indicator-team {
+  display: flex;
+  align-items: right;
+}
+
+
+
+.star-icon-team, .coins-icon-team {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.level-text_team {
+   font-weight: bold;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1890ff;
+  padding:0px;
+}
+/* Style pour les pièces */
+.coins-team {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #7EB7FC, #7EB7FC);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left:0px;
+  padding-right:0px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  min-width: 60px;
+  justify-content: center;
+ margin-left:-40px;
+ 
+}
+
+.coins-icon-team {
+    position: absolute;
+    left:20px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.coins-amount-team {
+  font-weight: bold;
+  font-size: 16px;
+  color: #070807;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Nouvelle barre de niveau */
+.level-bar_team {
+  width: 150px;
+  height: 8px;
+ 
+  background-color: #7EB7FC; /* Jaune */
+  border-radius: 22px;
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.level-progress-team {
+  height:100%;
+  
+  background-color: #ffcc00;
+  border-radius: 4px;
+}
+
+
+.avatar-icon-team {
+  width: 32px;
+  height: 32px;
+}
+.Brain-icon-team{
+    width: 60px;
+    margin-top: 2px;
+    margin-left:5px;
+    height: 60px;
+}
+
+
+/* TABS */
+.tabs-team {
+ padding-top:15px;
+    display: flex;
+  gap: 10px;
+  margin-top:20px;
+  
+}
+
+.tab-team{
+font-family: "VT323", monospace;
+font-size:17px;
+  padding: 7px 20px;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+ 
+   background: #7eb7fc;
+  cursor: pointer;
+  color: white;
+}
+
+.tab-team.active {
+  background: #e3f3ff;
+  color: black;
+  margin-left: 9px;
+}
+
+/* GRID */
+.albums-grid-team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  height: 400px;
+  background-color: #E4F5FF;
+  padding-top:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-left: 0%;
+    margin-top: 0px;
+ 
+}
+
+/* CARD */
+.album-card-team {
+  position: relative;
+}
+
+.album-card-team img {
+  width: 150px;
+  height:150px;
+  
+
+}
+
+.album-title-team {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7eb7fc;
+  color: white;
+ padding-top:15px;
+    padding-bottom:15px;
+    padding-left:55px;
+     padding-right:55px;
+    margin-bottom:0px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.alb-tabs-team{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+.footer-team{
+    margin-bottom: 0%;   
+    margin-top: 95px;
+   
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+     box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.18);
+}
+.footer-team img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
