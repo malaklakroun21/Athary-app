@@ -29,9 +29,9 @@ function Cappink (){
     };
 
     const removeCap = () =>{
-        navigate("/")
+        navigate("/Character")
     }
-
+ 
     const go =() =>{
         navigate("/welcomepink")
     }

@@ -25,7 +25,7 @@ function Capgreen (){
         };
     
         const backPink = () =>{
-            navigate("/")
+            navigate("/Character")
         }
     
         const removeCap = () =>{
