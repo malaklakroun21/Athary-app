@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import womanImg from "../../assets/page2/woman 1.png"
 import manImg from "../../assets/page2/man (1) 1.png"
 import logo from "../../assets/1page/Logo (2).png"
-import 
-const  Gender = () => {
+
+function Gender(){
   const navigate = useNavigate()
 
   return (
