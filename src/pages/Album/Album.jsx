@@ -61,7 +61,7 @@ function Album() {
         {/* TABS */}
       <div className="tabs-alb">
         <button className="tab active">My albums</button>
-        <button className="tab" onClick={() => navigate("/team")}>Team albums</button>
+        <button className="tab" onClick={() => navigate("/TeamAlbum")}>Team albums</button>
       </div>
 
        {/* ALBUMS GRID */}

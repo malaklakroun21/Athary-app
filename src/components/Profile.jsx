@@ -73,16 +73,18 @@ const Profile = () => {
                   <img src="/Fi.svg" alt="My Streak" />
                   <span>My Streak</span>
                 </div>
+
                 <div 
                   className="menu-item" 
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleMenuItemClick('puzzle');
+                    handleNavClick('/Album');
                   }}
                 >
                   <img src="/Puzzle.svg" alt="Puzzle Album" />
                   <span>Puzzle Album</span>
                 </div>
+
                 <div 
                   className="menu-item" 
                   onClick={(e) => {

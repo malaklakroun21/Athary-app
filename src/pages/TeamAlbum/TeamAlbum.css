@@ -178,11 +178,11 @@ font-size:17px;
   transform: translateX(-50%);
   background: #7eb7fc;
   color: white;
- padding-top:15px;
-    padding-bottom:15px;
-    padding-left:55px;
-     padding-right:55px;
-    margin-bottom:0px;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:55px;
+  padding-right:55px;
+  margin-bottom:0px;
   border-radius: 10px;
   font-weight: bold;
 }
@@ -197,7 +197,6 @@ font-size:17px;
 .footer-team{
     margin-bottom: 0%;   
     margin-top: 95px;
-   
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
