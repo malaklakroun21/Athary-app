@@ -1,0 +1,82 @@
+.friends-panel {
+  text-align: left;
+}
+
+.friends-title {
+  font-size: 1.1em;
+  color: #ff6f61;
+  font-weight: 700;
+  margin: 10px 0 15px;
+}
+
+.friends-list {
+  background: #f6dede;
+  border-radius: 15px;
+  padding: 10px 12px;
+}
+
+.friend-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.friend-row:last-child {
+  border-bottom: none;
+}
+
+.friend-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friend-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+
+.friend-name {
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 500;
+}
+
+.friend-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.friend-streak {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #ff6f61;
+}
+
+.friend-fire {
+  font-size: 1em;
+}
+
+.invite-row .friend-name {
+  color: #666;
+}
+
+.invite-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 600;
+  font-size: 1em;
+  background: #fff;
+}

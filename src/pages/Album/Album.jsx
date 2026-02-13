@@ -10,7 +10,7 @@ import art6 from "../../assets/Albumpage/photo6.svg"
 import art2 from "../../assets/Albumpage/photo2.svg"
 import art1 from "../../assets/Albumpage/photo1.svg"
 import coin from "../../assets/Albumpage/Coins.svg"
-import star from"../../assets/Albumpage/PixelStar.svg"
+import star from"../../assets/Albumpage/star.svg"
 import pain from "../../assets/Albumpage/Paint.svg"
 import goal from "../../assets/Albumpage/Goal.svg"
 import face from "../../assets/Albumpage/LOL.svg"
@@ -26,6 +26,10 @@ const albums = [
 ];
 function Album() {
     const navigate = useNavigate()
+
+    const nav = (path) => {
+        navigate(path);
+    }
 
     return (
         <div className="album-screen-alb">
@@ -75,8 +79,8 @@ function Album() {
 
       <div className="footer-alb">
         <img src={pain} alt="Pain Palette" className="pain-icon-alb" />
-        <img src={goal} alt="Goal" className="goal-icon-alb" />
-        <img src={face} alt="Face" className="face-icon-alb" />
+        <img onClick={() => nav("/Challenge")} role='button' tabIndex={0} src={goal} alt="Goal" className="goal-icon-alb" />
+        <img onClick={() => nav("/Profile")} role='button' tabIndex={0} src={face} alt="Face" className="face-icon-alb" />
         <img src={social} alt="Social" className="social-icon-alb" />
          </div>
 

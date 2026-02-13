@@ -1,0 +1,272 @@
+/* Base styles */
+.communication-container {
+  background-color: #BFE6FF;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  background-color: #BFE6FF;
+  border-radius: 0px;
+  padding-top: 5px;
+  margin-bottom: 8px;
+   padding-left: 8px;
+  gap: 0px;
+}
+
+
+
+.header-top {
+  display: flex;
+ gap: 0px;
+  padding-bottom: 0px;
+}
+
+.profile-name {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: #20409A;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.profile-avatar {
+  width: 30px; 
+  height: 100px;
+  object-fit: contain;
+}
+
+.menu-icon {
+  width: 50px; 
+  height: 60px;
+}
+
+
+.users-container {
+    display: flex;
+    padding-left: 12px;  
+    overflow-x: auto;           
+    gap: 0px;                    
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    max-width: 400px;             
+    height: 90px;                
+}
+
+
+/* Section du post principal */
+.main-post {
+  background-color: white;
+  border-radius: 20px;
+  margin: 15px 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.post-header {
+  display: flex;
+  padding: 4px 15px 0.5;
+  align-items: center;
+}
+
+.post-avatar-container {
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.post-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.post-user-info {
+    display: flex;
+    align-items: center;   
+    gap: 60px;             
+}
+
+.post-user-info h2 {
+  font-size: 18px;
+  color: #006064;
+  margin: 0 0 2px;
+  font-weight: 600;
+}
+
+.post-user-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.level {
+  background-color: #ffecb3;
+  color: #5d4037;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.post-image {
+  padding: 10px;
+  text-align: center;
+}
+
+.breakfast-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #81d4fa 0%, #4fc3f7 100%);
+  padding: 5px;
+  object-fit: cover;
+  height: 220px;
+}
+
+.post-caption {
+  padding: 0 15px 15px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.post-reactions {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  background-color: #f8f9fa;
+}
+
+.reaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.reaction-icon {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.reaction-count {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Section des commentaires */
+.comments-section {
+  padding: 0 20px 20px;
+}
+
+.comment-card {
+  display: flex;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #e3f2fd;
+  margin: 10px 0;
+  align-items: flex-start;
+}
+
+.comment-avatar-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.comment-avatar {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.comment-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-header h3 {
+  font-size: 16px;
+  color: #006064;
+  margin: 0;
+  font-weight: 600;
+}
+
+.comment-reaction {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.comment-reaction span:first-child {
+  margin-right: 3px;
+}
+
+.comment-content p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nav-icon.active {
+  opacity: 1;
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+

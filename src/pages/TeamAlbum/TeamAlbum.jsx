@@ -3,19 +3,25 @@ import react from 'react'
 import { useNavigate } from 'react-router-dom'
 import rightmenu from "../../assets/Albumpage/Frame126933.svg"
 import  artteam1 from "../../assets/Teamalb/Group 176.svg"
-
 import coin from "../../assets/Albumpage/Coins.svg"
-import star from"../../assets/Albumpage/PixelStar.svg"
+import star from"../../assets/Albumpage/star.svg"
 import pain from "../../assets/Albumpage/Paint.svg"
 import goal from "../../assets/Albumpage/Goal.svg"
 import face from "../../assets/Albumpage/LOL.svg"
 import social from "../../assets/Albumpage/People.svg"
+
+
 const albums = [
   { title: "January", image: artteam1, path:"/januaryteam" },
 
 ];
+
 function Album() {
     const navigate = useNavigate()
+
+    const nav = (path) => {
+        navigate(path);
+    }
 
     return (
         <div className="album-screen-team">
@@ -65,8 +71,8 @@ function Album() {
 
       <div className="footer-team">
         <img src={pain} alt="Pain Palette" className="pain-icon-team" />
-        <img src={goal} alt="Goal" className="goal-icon-team" />
-        <img src={face} alt="Face" className="face-icon-team" />
+        <img onClick={() => nav("/Challenge")} role='button' tabIndex={0} src={goal} alt="Goal" className="goal-icon-team" />
+        <img onClick={() => nav("/Profile")} role='button' tabIndex={0} src={face} alt="Face" className="face-icon-team" />
         <img src={social} alt="Social" className="social-icon-team" />
          </div>
 
