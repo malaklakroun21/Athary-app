@@ -16,9 +16,15 @@ import { getAnalytics } from "firebase/analytics";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+if (import.meta.env.PROD) {
+  isSupported().then((ok) => {
+    if (ok) {
+      getAnalytics(app);
+    }
+  });
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>

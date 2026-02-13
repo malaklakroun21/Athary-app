@@ -2,13 +2,18 @@
 .logo{
 width: 58px;
 height:64px;
+position:relative;
+left: 50%;
+transform: translateX(-50%);
+margin-top: 10px;
 }
-.gnr-text{
+.gnr-text-gender{
 color:#002CAF;
 font-size: 40px;
+text-align: center;
 
 }
-.gender1{
+.gender1-gender{
     background-color: white;
     height: 180px;
     width: 225px;
@@ -16,23 +21,24 @@ font-size: 40px;
     flex-direction: column; 
     align-items: center;    
     justify-content: center; 
-    margin: 50px;         
+    margin: 70px;  
+    box-shadow: 2px 2px 20px #002caf60;
+    left: 70%;
+      
    
 }
-.gender1 img{
+.gender1-gender img{
     width: 128px;
     height: 128px;
     object-fit: cover;
 }
-.gender1 p{
+.gender1-gender p{
 
   margin: 0 0 10px 0;
     font-size: 42px; 
    
 }
-.gender2{ 
-
-  
+.gender2-gender{ 
     background-color: white;
      height: 180px;
     width: 225px;
@@ -40,18 +46,19 @@ font-size: 40px;
     flex-direction: column; 
     align-items: center;    
     justify-content: center; 
-    margin: 50px; 
+    margin: 70px; 
+    box-shadow: 2px 2px 20px #002caf60;
 }
-.gender2:hover{
+.gender2-gender:hover{
 background-color: #BFE6FF;
 }
-.gender2 img{ 
+.gender2-gender img{ 
     width: 96px;
     height: 96px;
      padding-top: 28px;
 object-fit: cover;
 }
-.gender2 p{
+.gender2-gender p{
   
     margin: 10px 0 20px 0;
     font-size: 42px; 
