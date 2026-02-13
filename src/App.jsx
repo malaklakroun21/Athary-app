@@ -4,21 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/login';
 import Challenge from './components/Challenge';
 import Profile from './components/Profile'; 
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/challenge" element={<Challenge />} />
-        <Route path="/Profile" element={<Profile />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
-=======
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Questionnaire from './pages/questionnaire/Questionnaire'
@@ -55,4 +40,3 @@ function App() {
 }
 
 export default App;
->>>>>>> ba71dc326174f60ae4c090dfa34b2ac4281441bc
