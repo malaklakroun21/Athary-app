@@ -1,12 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Gender from './pages/Gender/Gender'
+import { Routes, Route } from "react-router-dom";
+import React from "react";
+import Email from "./pages/Email/Email";
+import Gender from "./pages/Gender/Gender";
+
+import Name from "./pages/Name/Name";
+
+
 function App() {
- return(
- <Gender />
-)
+  return (
+    <Routes>
+      <Route path="/" element={<Gender />} />
+      <Route path="/Email" element={<Email />} />
+      <Route path="/Name" element={<Name />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
+
