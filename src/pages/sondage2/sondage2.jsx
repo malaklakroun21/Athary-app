@@ -9,13 +9,13 @@ function Sondage2(){
     const navigate= useNavigate();
 
     const log =() => {
-        navigate(/Login)
+        navigate("/Login");
     }
     return(
         <div>
             <img src= {sondage2} alt="brain picture"/>
             <h1 className="title-sondage2">What would you <br/> like to improve first?</h1>
-            <div className="buttons-sondage2" onclick={log} role="button" tabIndex={0}>
+            <div className="buttons-sondage2" onClick={log} role="button" tabIndex={0}>
                 <button className="button-sondage2">Daily Rythm</button>
                 <button className="button-sondage2">Mental Clarity</button>
                 <button className="button-sondage2">Movement</button>

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/streak.css";
 import StreakPersonal from "./streakPersonal";
 import StreakFriends from "./streakFriends";
-import BottomNav from "./BottomNav";
+import BottomNav from "./bottomNav";
 
 export default function StreakPage() {
   const [activeTab, setActiveTab] = useState("personal");
