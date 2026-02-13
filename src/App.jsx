@@ -31,7 +31,7 @@ function App() {
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/Profile" element={<Profile />} />
       </Routes>
-    </Router>Router>
+    </Router>
   )
 }
 
